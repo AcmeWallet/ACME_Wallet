@@ -1,18 +1,15 @@
-
- 
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
 
   body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-    background: #f9f9f9;
+   
   }
 
 
 
-  /*---------------------------------------
-     TYPOGRAPHY              
-  -----------------------------------------*/
+  /*-TYPOGRAPHY---*/              
+
 
   h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
@@ -26,6 +23,7 @@
   h2 {
     color: #ffffff;
     font-size: 2em;
+   text-align: center;
     
   }
 
@@ -79,9 +77,7 @@
     padding-bottom: 10px;
     
   }
-img{
-  float: right;
-}
+
 
 
       /*-- GENERAL--*/            
@@ -127,16 +123,9 @@ img{
     padding: 100px 0;
   }
 
-  #contact,
-  footer {
-    background: #ffffff;
-    text-align: center;
-  }
 
   .overlay {
-    background: #536976;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #536976; 
     opacity: 0.9;
     position: absolute;
     top: 0;
@@ -147,36 +136,42 @@ img{
     height: 100%;
   }
 
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
  
-
-
-
-  /*---------------------------------------
-     BUTTONS               
-  -----------------------------------------*/
-
-  .section-btn {
-    background: #29ca8e;
-    border: 0;
-    border-radius: 50px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal;
-    padding: 12px 30px;
-    transition: 0.5s 0.2s;
+    /*- BUTTONS --*/              
+  
+.center {
+    margin: 0;
+    position: absolute;
+    top: 90%;   left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
   }
 
-  .section-btn:hover,
-  .section-btn:focus {
-    background: #202020;
-    color: #ffffff;
+  .btn {
+    background-color: #5a5a5a;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
+  .btn:hover {opacity: 1}
 
 
-  /*---------------------------------------
-       PRE LOADER              
-  -----------------------------------------*/
+  /*-- PRE LOADER----*/              
+ 
 
   .preloader {
     position: fixed;
@@ -192,41 +187,9 @@ img{
     background: none repeat scroll 0 0 #ffffff;
   }
 
-  .spinner {
-    border: 1px solid transparent;
-    border-radius: 3px;
-    position: relative;
-  }
 
-  .spinner:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 45px;
-    height: 45px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 1px solid #575757;
-    border-top-color: #ffffff;
-    animation: spinner .9s linear infinite;
-  }
+  /*---MENU---*/              
 
-  @-webkit-@keyframes spinner {
-    to {transform: rotate(360deg);}
-  }
-
-  @keyframes spinner {
-    to {transform: rotate(360deg);}
-  }
-
-
-
-  /*---------------------------------------
-      MENU              
-  -----------------------------------------*/
 
   .custom-navbar {
     border: none;
@@ -317,30 +280,16 @@ img{
 
   /*--HOME--*/
 
-  #home {
-    background: url('../images/Acme\ new\ logo.png') no-repeat center center;
-    background-size: cover;
-    vertical-align: middle;
-    
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
-    padding-top: 2em;
-    text-align: center;
-  }
+ 
 
   #home h1 {
     color: #ffffff;
-    margin-top: 10px;
+    margin-top: 5px;
    
   }
 
   .home-info {
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   .home-info h3 {
@@ -351,29 +300,17 @@ img{
     text-transform: uppercase;
     margin: 10px 0;
   }
-  
-
-
-  /*---------------------------------------
-      FEATURE              
-  -----------------------------------------*/
-
+ 
   #feature {
     background: #ffffff;
   }
 
 
-  /*---------------------------------------
-      ABOUT              
-  -----------------------------------------*/
-
   #about .col-md-4 {
     margin: 0;
     padding: 0;
   }
-  /*---------------------------------------
-     FOOTER              
-  -----------------------------------------*/
+
 
   footer {
     padding-bottom: 80px;
@@ -384,15 +321,11 @@ img{
   }
 
 
-
-  /*---------------------------------------
-     SOCIAL ICON              
-  -----------------------------------------*/
-
   .social-icon {
     position: relative;
     padding: 0;
     margin: 0;
+    float: right;
   }
 
   .social-icon li {
@@ -400,30 +333,8 @@ img{
     list-style: none;
   }
 
-  .social-icon li a {
-    border-radius: 50px;
-    color: #202020;
-    font-size: 15px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-decoration: none;
-    text-align: center;
-    position: relative;
-    margin: 5px 5px 5px 0;
-  }
 
-  .social-icon li a:hover {
-    background: #536976;
-    color: #ffffff;
-  }
-
-
-
-  /*---------------------------------------
-     RESPONSIVE STYLES              
-  -----------------------------------------*/
-
+  /*-Responsives-*/
   @media only screen and (max-width: 1200px) {
 
     .custom-navbar .navbar-nav {
@@ -438,53 +349,9 @@ img{
 
   @media only screen and (max-width: 992px) {
 
-    section {
-      padding: 60px 0;
-    }
-
-    .custom-navbar .navbar-nav {
-      margin-left: 0;
-    }
-
-    .custom-navbar .nav li a {
-      font-size: 14px;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-
-    #feature .nav-tabs>li>a {
-      font-size: 16px;
-      margin-right: 20px;
-    }
-
-    .feature-image {
-      bottom: -24em;
-    }
-
-    .pricing-thumb {
-      margin-bottom: 30px;
-    }
-
-    footer {
-      padding-bottom: 40px;
-    }
-  }
-  img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block; /* remove extra space below image */
-}
-
-
-  @media screen and (max-width: 767px) {
-
-    .section-title {
-      padding-bottom: 20px;
-    }
 
     .custom-navbar {
-      background: #ffffff;
-      background: #000000;
+      background: #536976;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -497,8 +364,6 @@ img{
       padding: 5px;
     }
 
- 
-
     #about .col-md-4:nth-child(3n) .team-thumb {
       display: flex;
       -webkit-box-orient: vertical;
@@ -507,14 +372,48 @@ img{
       -ms-flex-direction: column-reverse;
     }
 
+
+    footer {
+      padding-bottom: 40px;
+    }
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+
+  @media screen and (max-width: 768px) {
+
+    .section-title {
+      padding-bottom: 20px;
+    }
+
+    .custom-navbar {
+     
+      background: #536976;
+      -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .custom-navbar .nav li a {
+      line-height: normal;
+      padding: 5px;
+    }
+
+    img {display:block;margin:0 auto;}
+}
+
   @media screen and (max-width: 480px) 
   {
    
     img{
       max-width: 100%;
       max-height: 100%;
-      display: block; /* remove extra space below image */
-     
-
+      display: block; 
   }
   }
