@@ -1,6 +1,4 @@
-
- 
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
 
   body {
     font-family: 'Open Sans', sans-serif;
@@ -183,37 +181,6 @@
     background: none repeat scroll 0 0 #ffffff;
   }
 
-  .spinner {
-    border: 1px solid transparent;
-    border-radius: 3px;
-    position: relative;
-  }
-
-  .spinner:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 45px;
-    height: 45px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 1px solid #575757;
-    border-top-color: #ffffff;
-    animation: spinner .9s linear infinite;
-  }
-
-  @-webkit-@keyframes spinner {
-    to {transform: rotate(360deg);}
-  }
-
-  @keyframes spinner {
-    to {transform: rotate(360deg);}
-  }
-
-
 
   /*---MENU---*/              
 
@@ -316,7 +283,7 @@
   }
 
   .home-info {
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   .home-info h3 {
@@ -378,8 +345,7 @@
 
 
     .custom-navbar {
-      background: #ffffff;
-      background: #000000;
+      background: #536976;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -419,8 +385,8 @@
     }
 
     .custom-navbar {
-      background: #ffffff;
-      background: #000000;
+     
+      background: #536976;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
