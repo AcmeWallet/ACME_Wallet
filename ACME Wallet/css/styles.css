@@ -114,3 +114,17 @@
   {
    font-size: 20px;
   }
+
+  h2{
+    font-size: 15px;
+  }
+
+  .parent{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+
+  h3{
+    
+  }

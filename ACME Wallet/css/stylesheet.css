@@ -412,4 +412,13 @@
       max-height: 100%;
       display: block; 
   }
+
+  footer {
+    padding-bottom: 10px;
+  }
+
+  .copyright-text p {
+    margin: 1px;
+  }
+
   }
